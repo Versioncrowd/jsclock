@@ -1,0 +1,34 @@
+body {
+  background-image: url(atlantic-city-234775_1920.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  border: 10px solid white;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3.5px);
+}
+
+.hand {
+  transform-origin: 100%;
+  width: 50%;
+  height: 7px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  transition: all 0.05sec;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
